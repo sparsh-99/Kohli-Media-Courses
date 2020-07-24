@@ -467,16 +467,7 @@ h1, h2, h3, h4, h5, h6, figure {
 #gtco-about .heading {
   position: relative;
 }
-#gtco-about .heading .subtle-text {
-  position: absolute;
-  bottom: -1.6em;
-  left: 0;
-  text-transform: uppercase;
-  font-size: 120px;
-  color: #F8F8F8;
-  font-weight: 900;
-  z-index: -1;
-}
+
 
 #gtco-practice-areas .heading {
   position: relative;
@@ -561,17 +552,7 @@ h1, h2, h3, h4, h5, h6, figure {
 #gtco-contact .heading {
   position: relative;
 }
-#gtco-contact .heading .subtle-text {
-  position: absolute;
-  bottom: -1em;
-  left: 0;
-  text-transform: uppercase;
-  font-size: 120px;
-  color: #F8F8F8;
-  font-weight: 900;
-  z-index: -1;
-  line-height: 1;
-}
+
 #gtco-contact .heading .subtle-text span {
   display: block;
 }
@@ -1230,7 +1211,8 @@ form label {
 }
 
 .row-pb-md {
-  padding-bottom: 1em !important;
+  padding-bottom: 1rem !important;
+  padding-top: 8rem;
 }
 
 .row-pb-sm {
@@ -1493,17 +1475,6 @@ transform: translateX(0);
 .popular-courses{
   padding: 6rem 0;
 }
-.popular-courses .subtle-text {
-  position: absolute;
-  bottom: -1.6em;
-  left: 0;
-  text-transform: uppercase;
-  font-size: 120px;
-  color: #F8F8F8;
-  font-weight: 900;
-  z-index: -1;
-  line-height: 1;
-}
 .icon-cards {
   position: absolute;
   top: 50%;
@@ -1618,12 +1589,12 @@ transform: translateX(0);
   color: #333333;
   margin-bottom: 50px;
 }
-.testimonials .subtle-text {
+.subtle-text {
   position: absolute;
-  bottom: -1.6em;
+  bottom: -1em;
   left: 0;
   text-transform: uppercase;
-  font-size: 120px;
+  font-size: 100px;
   color: #F8F8F8;
   font-weight: 900;
   z-index: -1;
@@ -1711,4 +1682,86 @@ transform: translateX(0);
 }
 .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot {
   outline: 0;
+}
+
+.slide-row {
+padding: 50px 0px;
+}
+/* position dots in carousel */
+.flickity-page-dots {
+bottom: 0px;
+}
+/* white circles */
+.flickity-page-dots .dot {
+width: 12px;
+height: 12px;
+opacity: 1;
+background: transparent;
+border: 2px solid white;
+}
+/* fill-in selected dot */
+.flickity-page-dots .dot.is-selected {
+background: white;
+}
+
+.carousel-cell {
+  width:25%;
+  padding:0px 5px;
+}
+
+.carousel-cell img {
+  width:100% !important;
+  height:auto;
+}
+
+@media (min-width: 768px) and (max-width:980px){
+  .carousel-cell {
+      width:33.333333%
+  }
+}
+@media (max-width:767px){
+  .carousel-cell {
+      width:50%
+  }
+}
+@media (max-width:479px){
+  .carousel-cell {
+      width:100%
+  }
+}
+/*Lower Page Dots*/
+ol.flickity-page-dots {
+bottom: -50px;
+}
+
+li.dot {
+  border: 2px solid #00a3e0 !important;
+}
+.flickity-page-dots .dot.is-selected {
+  background:  #00a3e0;
+}
+
+.carousel-card {
+  height:300px!important;
+ background:white;
+ border-radius: 4px;
+ box-shadow:0 0.0625rem 0.125rem 0 rgba(0,0,0,0.2)
+}
+
+.main-carousel .carousel-card .card-description {
+      padding: 0.5em 0 0.5em 0.5em;
+  text-overflow: ellipsis;
+  white-space: inherit;
+  overflow-x: hidden;
+}
+.card-description h4{
+  font-size: 16px;
+  font-weight: 600;
+}
+.card-description .writer{
+  font-size: 13px;
+  color: #444;
+}
+.checked {
+  color: orange;
 }
