@@ -415,7 +415,7 @@ body.building_version .affix {
     position: relative;
 }
 #footer .navbar-brand img {
-    height: 100%;
+    height: inherit;
     float: left;
     margin-right: 10px;
 }
