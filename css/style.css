@@ -1599,6 +1599,11 @@ transform: translateX(0);
   z-index: -1;
   line-height: 1;
 }
+@media (max-width: 767px){
+  .subtle-text{
+    font-size: 70px;
+  }
+}
 .testimonials .subtle-text span {
   display: block;
 }
