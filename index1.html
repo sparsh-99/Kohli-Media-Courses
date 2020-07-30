@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Kohli Courses</title>
+</head>
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-color: black;
+  min-height: 80%;
+  background-size: cover;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+.checked {
+  color: orange;
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="#" class="w3-bar-item w3-button w3-wide" style="font-weight: 900;"><b><em>Kohli Courses</em></b></a>
+    <div class="w3-right w3-hide-small">
+      <a href="#" class="w3-bar-item w3-button">ABOUT US</a>
+      <a href="#" class="w3-bar-item w3-button"><i class="fa fa-th"></i> TEACH ON KOHLI</a>
+      <a href="#" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+    </div>
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+  <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">TEACH ON KOHLI</a>
+  <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+</nav>
+
+<header class="bgimg-1 w3-display" id="home">
+  <div class="w3-display-left w3-text-white" style="padding:48px">
+    <span class="w3-jumbo w3-hide-small w3-center">Master MERN Stack</span><br>
+    <span class="w3-xxlarge w3-hide-large w3-hide-medium w3-center">Master MERN Stack</span><br>
+    <span class="w3-xlarge">Learn MERN Stack by building Full-stack React.js, Node.js, Express.js & MongoDB (MERN) application!</span><br><br>
+    <span class="checked">4.9</span>&nbsp;&nbsp;<span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>&nbsp;&nbsp;
+    <span class="w3-medium"> (245 ratings)&ensp;36,522 students</span>
+    <br><br>
+    <span class="w3-xxmedium"><i class="fa fa-creative-commons" aria-hidden="true"></i>&ensp;Created by <a href="#">Sparsh Garg</a></span><br>
+    <span class="w3-xxmedium"><i class="fa fa-exclamation-circle" aria-hidden="true"></i>&ensp;Last updated 5/2020</span>&emsp;
+    <span class="w3-xxmedium"><i class="fa fa-globe" aria-hidden="true"></i>&ensp;English</span> 
+    <p><a href="#" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Enroll Now</a>&emsp;
+        <a href="#" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off"><i class="fa fa-share" aria-hidden="true"></i>&nbsp;&nbsp;Share</a>
+    </p>
+  </div> 
+</header>
+
+<!-- About Section -->
+<div class="w3-container" style="padding:128px 16px" id="about">
+    <h3 class="w3-center"><b>ABOUT THE COURSE</b></h3>
+    <p class="w3-center w3-large">Welcome to the "Master MERN Stack"  where we will be building application using MERN Stack (Node.js, Express, React, Redux and MongoDB).
+    </p>
+    <div class="w3-row-padding w3-center" style="margin-top:64px">
+      <div class="w3-quarter">
+        <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
+        <p class="w3-large">Frontend Using REACT.JS</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+      </div>
+      <div class="w3-quarter">
+        <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
+        <p class="w3-large">EXPRESS.JS</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+      </div>
+      <div class="w3-quarter">
+        <i class="fa fa-diamond w3-margin-bottom w3-jumbo"></i>
+        <p class="w3-large">DataBase using MONGODB</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+      </div>
+      <div class="w3-quarter">
+        <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
+        <p class="w3-large">Server-side Using NODE.JS</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+      </div>
+    </div>
+  </div>
+
+<!--Course content-->
+<div class="w3-container w3-center" style="margin-top: 64px;">
+    <h3 class="w3-center"><b>COURSE CONTENTS</b></h3>
+    <p class="w3-center w3-large">4 sections • 22 lectures • 3h 15m total length<br><strong><span style="font-size: 30px;">What you'll learn</span></strong></p>
+    <div class="container">
+        
+    </div>
+</div>
+  
+</body>
+</html>
