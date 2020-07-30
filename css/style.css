@@ -1599,9 +1599,23 @@ transform: translateX(0);
   z-index: -1;
   line-height: 1;
 }
-@media (max-width: 767px){
+@media (max-width: 768px) { 
   .subtle-text{
-    font-size: 70px;
+    font-size: 65px;
+  }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (max-width: 492px) { 
+  .subtle-text{
+    font-size: 50px;
+  }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (max-width: 320px) { 
+  .subtle-text{
+    font-size: 35px;
   }
 }
 .testimonials .subtle-text span {
