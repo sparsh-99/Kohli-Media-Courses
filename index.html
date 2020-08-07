@@ -26,14 +26,28 @@
   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js'></script>
 	  
 
 
 	<!-- building CSS -->
 	<link rel="stylesheet" href="./css/building.css">
 	<script src="./js/modernizr-2.6.2.min.js"></script>
-	<script >
-
+	<script>
+		$(document).ready(function(){
+		$('#searchbar-icon').click(function(){
+			$('#searchbar-input').animate({width: 'toggle'});
+			$("#searchbar-icon").toggle();
+			$("#searchbar-cross").toggle(500);
+		});
+		
+		$('#searchbar-cross').click(function(){
+			$('#searchbar-input').animate({width: 'toggle'});
+			$("#searchbar-cross").toggle();
+			$("#searchbar-icon").toggle(500);
+		});
+  
+});
 	</script>
 	</head>
 	<body>
@@ -44,10 +58,15 @@
 	<nav class="gtco-nav" role="navigation">
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-4 col-xs-12">
+				<div class="col-sm-3 col-xs-6">
 					<div id="gtco-logo"><a href="index.html"><em>Kohli Courses</em></a></div>
 				</div>
-				<div class="col-xs-8 text-right menu-1 main-nav">
+				<div class="col-sm-4 col-xs-4 searchbar">
+					<input type="text" id="searchbar-input" placeholder="Search for courses">
+					<i class="fa fa-search" id="searchbar-icon" aria-hidden="true"></i>
+					<i class="fa fa-times" id="searchbar-cross" aria-hidden="true"></i>
+				</div>
+				<div class="col-xs-2 col-sm-5 text-right menu-1 main-nav">
 					<ul>
 						<li class="active"><a href="#" data-nav-section="home">Home</a></li>
 						<li><a href="#" data-nav-section="about">About</a></li>
@@ -623,7 +642,7 @@
 				 <div class="widget widget_text">
 					
 					<div class="textwidget">
-					   <a class="navbar-brand widget-title" href="index-building.html" style="padding-top: 2rem;"><img src="./images/logo-icon.png" alt="image"><span>KOHLI Media LLP</span></a>
+					   <h2 class="widget-title"><span><img src="./images/logo-icon.png" alt="" style="width: 50px; height: 40px; margin-top: -10px;">&ensp;KOHLI Media LLP</span></h2>
 					   <p>Kohli Company founded in 2006 is a group of businesses, that develop innovative Web-Products serving people worldwide, is now Kohli Media LLP - an Indian Limited Liability Partnership.</p>
 					</div>
 				 </div>
@@ -706,8 +725,7 @@
 	<script src="./js/main.js"></script>
 	<script src="./js/jquery-1.7.1.min.js"></script>
 	<script src="./js/bootstrap.js"></script>
-
-
+	
 	</body>
 </html>
 

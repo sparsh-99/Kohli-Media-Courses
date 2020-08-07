@@ -115,7 +115,7 @@ h1, h2, h3, h4, h5, h6, figure {
   font-size: 25px;
 }
 .gtco-nav #gtco-logo a {
-  padding: 0px 10px;
+  padding: 0px 0px;
   color: #fff;
   font-weight: 700;
   -webkit-transition: 0.4s;
@@ -2232,4 +2232,45 @@ ul.cd-author-info li span {
 
 .learn{
   padding-bottom: 3rem;
+}
+
+.searchbar {
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.searchbar #searchbar-input {
+  border: 0px solid;
+  border-bottom: 2px solid black;
+  width: 400px;
+  font-size: 3rem;
+  outline: none;
+  color: white;
+  display: none;
+  background: bottom;
+}
+.searchbar .fa-times {
+  display: none;
+  font-size: 3.8rem;
+  cursor: pointer;
+}
+.searchbar .fa-search {
+  font-size: 3.7rem;
+  cursor: pointer;
+}
+@media (max-width: 768px){
+  .searchbar{
+    height: 2.5rem;
+  }
+  .searchbar #searchbar-input{
+    width: 170px;
+    font-size: 2rem;
+  }
+  .searchbar .fa-times{
+    font-size: 3rem;
+  }
+  .searchbar .fa-search{
+    font-size: 3rem;
+  }
 }
