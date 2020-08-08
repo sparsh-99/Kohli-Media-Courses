@@ -2274,3 +2274,18 @@ ul.cd-author-info li span {
     font-size: 3rem;
   }
 }
+@media (max-width: 420px){
+  .searchbar{
+    height: 4.2rem;
+  }
+  .searchbar #searchbar-input{
+    width: 120px;
+    font-size: 2rem;
+  }
+  .searchbar .fa-times{
+    font-size: 2.5rem;
+  }
+  .searchbar .fa-search{
+    font-size: 2.5rem;
+  }
+}
