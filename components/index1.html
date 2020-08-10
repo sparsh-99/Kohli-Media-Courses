@@ -11,7 +11,24 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <title>Kohli Courses</title>
+    <script>
+      $(document).ready(function(){
+      $('#searchbar-icon').click(function(){
+        $('#searchbar-input').animate({width: 'toggle'});
+        $("#searchbar-icon").toggle();
+        $("#searchbar-cross").toggle(500);
+      });
+      
+      $('#searchbar-cross').click(function(){
+        $('#searchbar-input').animate({width: 'toggle'});
+        $("#searchbar-cross").toggle();
+        $("#searchbar-icon").toggle(500);
+      });
+    
+  });
+    </script>
 </head>
 <style>
 
@@ -19,26 +36,29 @@
 <body>
 
 <!-- Navbar (sit on top) -->
-<div class="w3-top">
-  <div class="w3-bar w3-white w3-card" id="myNavbar">
-    <a href="#" class="w3-bar-item w3-button w3-wide" style="font-weight: 900; text-decoration: none;"><b><em>Kohli Courses</em></b></a>
-    <div class="w3-right w3-hide-small">
-      <a href="#" class="w3-bar-item w3-button" style="text-decoration: none;">ABOUT US</a>
-      <a href="#" class="w3-bar-item w3-button" style="text-decoration: none;"><i class="fa fa-th"></i> TEACH ON KOHLI</a>
-      <a href="#" class="w3-bar-item w3-button" style="text-decoration: none;"><i class="fa fa-envelope"></i> CONTACT</a>
+
+<nav class="gtco-nav" role="navigation">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-3 col-xs-6">
+        <div id="gtco-logo"><a href="index.html" style="text-decoration: none;"><em>Kohli Courses</em></a></div>
+      </div>
+      <div class="col-sm-4 col-xs-4 searchbar">
+        <input type="text" id="searchbar-input" placeholder="Search for courses">
+        <i class="fa fa-search" id="searchbar-icon" aria-hidden="true"></i>
+        <i class="fa fa-times" id="searchbar-cross" aria-hidden="true"></i>
+      </div>
+      <div class="col-xs-2 col-sm-5 text-right menu-1 main-nav">
+        <ul>
+          <li><a href="#" data-nav-section="home" style="text-decoration: none;">Home</a></li>
+          <li><a href="#" data-nav-section="about" style="text-decoration: none;">About</a></li>
+          <li><a href="#" data-nav-section="courses" style="text-decoration: none;">Our Courses</a></li>
+          <li class="btn-cta"><a href="#" data-nav-section="contact"><span>Contact</span></a></li>
+        </ul>
+      </div>
     </div>
-
-    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
-      <i class="fa fa-bars"></i>
-    </a>
+    
   </div>
-</div>
-
-<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
-  <a href="#" onclick="w3_close()" class="w3-bar-item w3-button" style="text-decoration: none;">ABOUT</a>
-  <a href="#" onclick="w3_close()" class="w3-bar-item w3-button" style="text-decoration: none;">TEACH ON KOHLI</a>
-  <a href="#" onclick="w3_close()" class="w3-bar-item w3-button" style="text-decoration: none;">CONTACT</a>
 </nav>
 
 <header class="bgimg-1 w3-display" id="home">
